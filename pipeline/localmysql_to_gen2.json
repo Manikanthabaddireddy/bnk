@@ -8,12 +8,21 @@
 				"dependsOn": [],
 				"policy": {
 					"timeout": "0.12:00:00",
-					"retry": 0,
+					"retry": 1,
 					"retryIntervalInSeconds": 30,
-					"secureOutput": false,
+					"secureOutput": true,
 					"secureInput": false
 				},
-				"userProperties": [],
+				"userProperties": [
+					{
+						"name": "Source",
+						"value": "`customers`"
+					},
+					{
+						"name": "Destination",
+						"value": "stage/mysqldata/customers"
+					}
+				],
 				"typeProperties": {
 					"source": {
 						"type": "MySqlSource"
