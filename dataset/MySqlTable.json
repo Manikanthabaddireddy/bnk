@@ -14,7 +14,10 @@
 		"type": "MySqlTable",
 		"schema": [],
 		"typeProperties": {
-			"tableName": "`config`"
+			"tableName": {
+				"value": "@dataset().filename",
+				"type": "Expression"
+			}
 		}
 	}
 }
