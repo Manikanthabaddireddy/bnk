@@ -5,11 +5,6 @@
 			"referenceName": "localmysql",
 			"type": "LinkedServiceReference"
 		},
-		"parameters": {
-			"filename": {
-				"type": "String"
-			}
-		},
 		"annotations": [],
 		"type": "MySqlTable",
 		"schema": [],
