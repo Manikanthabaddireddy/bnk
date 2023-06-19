@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Lookupforlocalcongiftable",
+				"name": "Lookup1",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
@@ -16,7 +16,8 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-						"type": "MySqlSource"
+						"type": "MySqlSource",
+						"query": "select * from config;"
 					},
 					"dataset": {
 						"referenceName": "MySqlTable",
@@ -30,16 +31,16 @@
 				"type": "ForEach",
 				"dependsOn": [
 					{
-						"activity": "Lookupforlocalcongiftable",
+						"activity": "Lookup1",
 						"dependencyConditions": [
-							"Succeeded"
+							"Completed"
 						]
 					}
 				],
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('Lookupforlocalcongiftable').output.value",
+						"value": "@activity('Lookup1').output.value",
 						"type": "Expression"
 					},
 					"isSequential": true,
@@ -83,11 +84,11 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "MySqlTable",
+									"referenceName": "MySqlTable1",
 									"type": "DatasetReference",
 									"parameters": {
-										"tablename": {
-											"value": "@item().tablename",
+										"table_name": {
+											"value": "@item().table_name",
 											"type": "Expression"
 										}
 									}
@@ -95,7 +96,7 @@
 							],
 							"outputs": [
 								{
-									"referenceName": "DelimitedText1",
+									"referenceName": "DelimitedText2",
 									"type": "DatasetReference",
 									"parameters": {
 										"container": {
