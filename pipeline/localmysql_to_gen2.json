@@ -33,7 +33,7 @@
 					{
 						"activity": "Lookup1",
 						"dependencyConditions": [
-							"Succeeded"
+							"Completed"
 						]
 					}
 				],
@@ -84,7 +84,7 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "MySqlTable",
+									"referenceName": "MySqlTable1",
 									"type": "DatasetReference"
 								}
 							],

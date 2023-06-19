@@ -1,9 +1,14 @@
 {
-	"name": "MySqlTable",
+	"name": "MySqlTable1",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "localmysql",
 			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"table_name": {
+				"type": "String"
+			}
 		},
 		"annotations": [],
 		"type": "MySqlTable",
