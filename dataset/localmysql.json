@@ -1,0 +1,12 @@
+{
+	"name": "localmysql",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "localmysql",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "MySqlTable",
+		"schema": []
+	}
+}
