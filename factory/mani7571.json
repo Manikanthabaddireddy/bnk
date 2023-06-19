@@ -1,0 +1,9 @@
+{
+	"name": "mani7571",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "fd026dcc-4fb3-40ca-b19a-0da3c0d25d72",
+		"tenantId": "3a68c21e-76ac-4a25-8cbc-f836d21034cc"
+	}
+}
