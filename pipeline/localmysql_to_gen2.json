@@ -84,13 +84,7 @@
 							"inputs": [
 								{
 									"referenceName": "MySqlTable",
-									"type": "DatasetReference",
-									"parameters": {
-										"tablename": {
-											"value": "@item().tablename",
-											"type": "Expression"
-										}
-									}
+									"type": "DatasetReference"
 								}
 							],
 							"outputs": [
