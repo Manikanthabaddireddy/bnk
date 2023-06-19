@@ -9,10 +9,7 @@
 		"type": "MySqlTable",
 		"schema": [],
 		"typeProperties": {
-			"tableName": {
-				"value": "@dataset().table_name",
-				"type": "Expression"
-			}
+			"tableName": "`config`"
 		}
 	}
 }
