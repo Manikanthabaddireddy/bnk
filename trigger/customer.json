@@ -3,14 +3,21 @@
 	"properties": {
 		"annotations": [],
 		"runtimeState": "Started",
-		"pipelines": [],
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "localmysql_to_gen2",
+					"type": "PipelineReference"
+				}
+			}
+		],
 		"type": "ScheduleTrigger",
 		"typeProperties": {
 			"recurrence": {
 				"frequency": "Hour",
 				"interval": 24,
-				"startTime": "2023-06-19T12:19:00Z",
-				"timeZone": "UTC"
+				"startTime": "2023-06-19T12:19:00",
+				"timeZone": "India Standard Time"
 			}
 		}
 	}
