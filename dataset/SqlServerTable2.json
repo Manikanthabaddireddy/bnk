@@ -5,6 +5,11 @@
 			"referenceName": "SqlServer",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"table_name": {
+				"type": "String"
+			}
+		},
 		"annotations": [],
 		"type": "SqlServerTable",
 		"schema": [
@@ -27,7 +32,10 @@
 		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "configtogen2"
+			"table": {
+				"value": "@dataset().table_name",
+				"type": "Expression"
+			}
 		}
 	}
 }
