@@ -11,6 +11,12 @@
 			},
 			"destination_container": {
 				"type": "String"
+			},
+			"destination_folder": {
+				"type": "String"
+			},
+			"destination_file": {
+				"type": "String"
 			}
 		},
 		"annotations": [],
@@ -18,6 +24,14 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().destination_file",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().destination_folder",
+					"type": "Expression"
+				},
 				"fileSystem": {
 					"value": "@dataset().destination_container",
 					"type": "Expression"
