@@ -75,7 +75,13 @@
 							"inputs": [
 								{
 									"referenceName": "DelimitedText",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"dest_container": {
+											"value": "@item().destination_container",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}

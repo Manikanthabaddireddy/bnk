@@ -29,7 +29,7 @@
 					"type": "Expression"
 				},
 				"folderPath": {
-					"value": "@dataset().destination_folder",
+					"value": "@concat(dataset().destination_folder,'/',utcNow('yyyy-MM-dd'))",
 					"type": "Expression"
 				},
 				"fileSystem": {
