@@ -11,6 +11,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage'"
 		},
+		"SqlServer_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'SqlServer'"
+		},
 		"localmysql_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'localmysql'"
@@ -48,6 +52,9 @@
 					},
 					"AzureDataLakeStorage_accountKey": {
 						"value": "[parameters('AzureDataLakeStorage_accountKey')]"
+					},
+					"SqlServer_connectionString": {
+						"value": "[parameters('SqlServer_connectionString')]"
 					},
 					"localmysql_connectionString": {
 						"value": "[parameters('localmysql_connectionString')]"

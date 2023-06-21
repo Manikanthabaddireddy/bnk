@@ -8,6 +8,9 @@
 		"AzureDataLakeStorage_accountKey": {
 			"value": ""
 		},
+		"SqlServer_connectionString": {
+			"value": ""
+		},
 		"localmysql_connectionString": {
 			"value": ""
 		},
