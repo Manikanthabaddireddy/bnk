@@ -60,15 +60,9 @@
 							"userProperties": [],
 							"typeProperties": {
 								"source": {
-									"type": "DelimitedTextSource",
-									"storeSettings": {
-										"type": "AzureBlobFSReadSettings",
-										"recursive": true,
-										"enablePartitionDiscovery": false
-									},
-									"formatSettings": {
-										"type": "DelimitedTextReadSettings"
-									}
+									"type": "SqlServerSource",
+									"queryTimeout": "02:00:00",
+									"partitionOption": "None"
 								},
 								"sink": {
 									"type": "DelimitedTextSink",
@@ -93,18 +87,8 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "DelimitedText",
-									"type": "DatasetReference",
-									"parameters": {
-										"destination_container": {
-											"value": "@item().destination_folder",
-											"type": "Expression"
-										},
-										"destination_folder": {
-											"value": "@item().destination_file",
-											"type": "Expression"
-										}
-									}
+									"referenceName": "SqlServerTable1",
+									"type": "DatasetReference"
 								}
 							],
 							"outputs": [
@@ -112,7 +96,12 @@
 									"referenceName": "DelimitedText",
 									"type": "DatasetReference",
 									"parameters": {
-										"destination_container": "@item().destination_folder"
+										"destination_container": {
+											"value": "@item().destination_container",
+											"type": "Expression"
+										},
+										"destination_folder": "@item().destination_folder",
+										"destination_file": "@item().destination_file"
 									}
 								}
 							]
