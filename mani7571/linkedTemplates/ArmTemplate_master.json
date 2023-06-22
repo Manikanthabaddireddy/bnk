@@ -15,10 +15,6 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'SqlServer'"
 		},
-		"localmysql_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'localmysql'"
-		},
 		"AzureDataLakeStorage_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://store7571.dfs.core.windows.net/"
@@ -55,9 +51,6 @@
 					},
 					"SqlServer_connectionString": {
 						"value": "[parameters('SqlServer_connectionString')]"
-					},
-					"localmysql_connectionString": {
-						"value": "[parameters('localmysql_connectionString')]"
 					},
 					"AzureDataLakeStorage_properties_typeProperties_url": {
 						"value": "[parameters('AzureDataLakeStorage_properties_typeProperties_url')]"

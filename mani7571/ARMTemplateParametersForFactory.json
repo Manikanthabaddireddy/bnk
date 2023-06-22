@@ -11,9 +11,6 @@
 		"SqlServer_connectionString": {
 			"value": ""
 		},
-		"localmysql_connectionString": {
-			"value": ""
-		},
 		"AzureDataLakeStorage_properties_typeProperties_url": {
 			"value": "https://store7571.dfs.core.windows.net/"
 		}
