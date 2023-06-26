@@ -1,0 +1,36 @@
+{
+	"name": "oncefile",
+	"properties": {
+		"activities": [
+			{
+				"name": "ForEach1",
+				"type": "ForEach",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@pipeline().parameters.filenames",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"parameters": {
+			"filenames": {
+				"type": "array",
+				"defaultValue": [
+					"BankChurners.csv",
+					"covid_variants.csv",
+					"SalesJan2009.csv"
+				]
+			}
+		},
+		"variables": {
+			"checkpoint": {
+				"type": "Boolean",
+				"defaultValue": true
+			}
+		},
+		"annotations": []
+	}
+}
