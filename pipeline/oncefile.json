@@ -56,7 +56,7 @@
 												"formatSettings": {
 													"type": "DelimitedTextWriteSettings",
 													"quoteAllText": true,
-													"fileExtension": ".txt"
+													"fileExtension": ".csv"
 												}
 											},
 											"enableStaging": false,
@@ -81,6 +81,30 @@
 												"type": "DatasetReference"
 											}
 										]
+									},
+									{
+										"name": "Set variable1",
+										"type": "SetVariable",
+										"dependsOn": [
+											{
+												"activity": "Copy data1",
+												"dependencyConditions": [
+													"Failed"
+												]
+											}
+										],
+										"policy": {
+											"timeout": "0.12:00:00",
+											"retry": 0,
+											"retryIntervalInSeconds": 30,
+											"secureOutput": false,
+											"secureInput": false
+										},
+										"userProperties": [],
+										"typeProperties": {
+											"variableName": "checkpoint",
+											"value": false
+										}
 									}
 								]
 							}
