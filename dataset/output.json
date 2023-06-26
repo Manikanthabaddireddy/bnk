@@ -1,5 +1,5 @@
 {
-	"name": "DelimitedText2",
+	"name": "output",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorage",
@@ -10,7 +10,6 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "csvfiles",
 				"fileSystem": "output"
 			},
 			"columnDelimiter": ",",
