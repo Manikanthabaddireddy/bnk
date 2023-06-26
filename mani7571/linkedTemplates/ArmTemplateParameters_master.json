@@ -17,6 +17,12 @@
 		"trigger1_properties_typeProperties_scope": {
 			"value": "/subscriptions/b05a16c7-7b32-43e0-83c7-51b8cca36b80/resourceGroups/all_purpose/providers/Microsoft.Storage/storageAccounts/store7571"
 		},
+		"trigger2_properties_pipeline_parameters_start": {
+			"value": "@trigger.outputs.windowStartTime"
+		},
+		"trigger2_properties_pipeline_parameters_end": {
+			"value": "@trigger.outputs.windowEndTime"
+		},
 		"containerUri": {
 			"value": ""
 		},
