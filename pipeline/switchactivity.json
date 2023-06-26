@@ -87,15 +87,6 @@
 												"typeProperties": {
 													"source": {
 														"type": "DelimitedTextSource",
-														"additionalColumns": [
-															{
-																"name": "dateofinsert",
-																"value": {
-																	"value": "@utcNow('yyyy-MM-dd')",
-																	"type": "Expression"
-																}
-															}
-														],
 														"storeSettings": {
 															"type": "AzureBlobFSReadSettings",
 															"recursive": true,
