@@ -13,6 +13,9 @@
 		},
 		"AzureDataLakeStorage_properties_typeProperties_url": {
 			"value": "https://store7571.dfs.core.windows.net/"
+		},
+		"trigger1_properties_typeProperties_scope": {
+			"value": "/subscriptions/b05a16c7-7b32-43e0-83c7-51b8cca36b80/resourceGroups/all_purpose/providers/Microsoft.Storage/storageAccounts/store7571"
 		}
 	}
 }
