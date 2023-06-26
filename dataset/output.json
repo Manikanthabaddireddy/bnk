@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"folderPath": "xlsxfiles",
 				"fileSystem": "output"
 			},
 			"columnDelimiter": ",",
